@@ -1,21 +1,23 @@
+<!-- Heading for the page -->
 <h1>The Presidents of Ireland</h1>
 
+<!-- loops through the 'presidents' array and displays each item -->
 <ul>
     <li *ngFor="let x of presidents">
-        {{x}}
+        {{x}} <!-- Displays each president's name -->
     </li>
 </ul>
-
+<!-- A loop that goes through the 'presidents' array and displays each item in an ordered list -->
     <ol>
         @for(pres of presidents;track pres)
         {
-            <li>{{pres}}</li>
+            <li>{{pres}}</li> <!-- Does the same as the previous list-->
         }
     </ol>
-
+  <!-- A loop that goes through the 'presidents3' array (which contains objects) -->
     <ul>
         @for(pres of presidents3; track pres)
         {
-            <li>{{pres.name}},{{pres.term}}</li>
+            <li>{{pres.name}},{{pres.term}}</li> <!-- Displays the president's name and term -->
         }
     </ul>
